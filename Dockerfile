@@ -1,9 +1,9 @@
-FROM node:latest
+FROM node:18.7.0
 WORKDIR /app
 
 COPY ./package.json /app
 
-RUN npm install --production
+RUN npm install
 
 EXPOSE 8000
 
